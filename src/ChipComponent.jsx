@@ -99,7 +99,7 @@ const ChipComponent = () => {
     setinputValue(event.target.value);
     const inputValue = event.target.value;
     setSearchTerm(inputValue);
-    if (inputValue.length === 0 || false) {
+    if (inputValue.length === 0) {
       setSearchTerm("");
       setMatchingUsers([]);
     } else {
