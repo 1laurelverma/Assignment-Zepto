@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass");
+
+.outer_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: blue;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.tags-input {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 48px;
+  width: 600px;
+  // padding: 0 8px;
+  border-bottom: 2px solid blue;
+  input {
+    flex: 1;
+    // width: 155px;
+    border: none;
+    height: 46px;
+    font-size: 14px;
+    padding: 4px 0 0 0;
+    &:focus {
+      outline: none !important;
+      border: none !important;
+    }
+  }
+}
+
+#tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.tag {
+  width: auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  // padding: 0 8px;
+  font-size: 14px;
+  list-style: none;
+  border-radius: 25px;
+  margin: 0 10px 8px 0;
+  background: #d3d3d3;
+
+  .tag-img {
+    border-radius: 50%;
+  }
+
+  .tag-title {
+    margin: 3px 12px 0px 8px;
+  }
+
+  .tag-close-icon {
+    display: block;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    font-size: 18px;
+    color: black;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.matchingUsersOuter {
+  min-height: auto;
+  max-height: 250px;
+  // overflow-y: scroll;
+  overflow: scroll;
+  max-width: 400px;
+  min-width: max-content;
+  padding: 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.matchingUsers {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+
+  .matchingUser {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      background: #d3d3d3;
+    }
+
+    .user-img {
+      border-radius: 50%;
+    }
+
+    .user-name {
+      margin: 0px 20px 0px 10px;
+      font-size: 14px;
+    }
+
+    .user-email {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tags-input {
+    width: calc(100vw - 32px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .matchingUsersOuter {
+    width: fit-content;
+  }
+}
