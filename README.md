@@ -11,4 +11,4 @@ https://master--laurel-zepto-assignment.netlify.app/
 
 ## About : 
 
-Created a chip component in React where user can add or delete a user prfile with recommendation as per name entered
+Created a chip component in React where user can add or delete a user profile with recommendation as per name entered
